@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "id": "1",
+      "date": "2024-08-06",
+      "description": "Add Stocks to the Shop",
+      "category": "Business",
+      "amount": "10000"
     }
   ]
 }
