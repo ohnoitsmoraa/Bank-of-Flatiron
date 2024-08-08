@@ -90,6 +90,27 @@
       "description": "Add Stocks to the Shop",
       "category": "Business",
       "amount": "10000"
+    },
+    {
+      "id": "13",
+      "date": "2024-08-08",
+      "description": "Visit Mi Amor",
+      "category": "Personal",
+      "amount": "5000"
+    },
+    {
+      "id": "14",
+      "date": "2024-08-08",
+      "description": "Date with the girls",
+      "category": "Personal",
+      "amount": "5000"
+    },
+    {
+      "id": "14",
+      "date": "2024-08-08",
+      "description": "Date with the girls",
+      "category": "Personal",
+      "amount": "5000"
     }
   ]
 }

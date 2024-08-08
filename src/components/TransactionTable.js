@@ -7,15 +7,15 @@ const TransactionTable = ({ transactions }) => {
       <table>
         <thead>
           <tr>
-            <th>Id</th>
-            <th>Date</th>
-            <th>Amount</th>
-            <th>Category</th>
-            <th>Description</th>
+            <th className="head">Id</th>
+            <th className="head">Date</th>
+            <th className="head">Amount</th>
+            <th className="head">Category</th>
+            <th className="head">Description</th>
           </tr>
         </thead>
         <tbody>
-          {transactions.map((transaction) => (
+          {transactions?.map((transaction) => (
             <Transaction
               key={transaction.id}
               id={transaction.id}

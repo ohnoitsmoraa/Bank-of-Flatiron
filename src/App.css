@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.title{
+  text-align:flex start;
+
+}
+.delete{
+  color: red;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.add{
+  color:blue;
+  background-color: whitesmoke;
+  width: 100px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.search{
+  display: flex;
+  justify-content:flex-start;
+}
+.character {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(142, 131, 153);
+}
+.head{
+  background-color:blueviolet;
+}

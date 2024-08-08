@@ -1,19 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Form from './components/Form';
-import Transaction from './components/Transaction';
-import { Routes } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
-import TransactionTable from './components/TransactionTable';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Form from "./components/Form";
+import Transaction from "./components/Transaction";
+import { Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import TransactionTable from "./components/TransactionTable";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <TransactionTable />
+      <Form />
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

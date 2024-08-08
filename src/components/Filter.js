@@ -1,9 +1,9 @@
 import React from "react";
 
-const Filter = () => {
+const Filter = ({ search, setSearch }) => {
   return (
-    <div>
-      <input
+    <div className="search">
+      <input 
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
