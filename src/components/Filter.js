@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function Filter() {
+const Filter = () => {
   return (
-    <div>Filter</div>
-  )
-}
+    <div>
+      <input
+        type="text"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Search by category"
+      />
+    </div>
+  );
+};
 
-export default Filter
+export default Filter;
