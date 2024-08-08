@@ -5,11 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Form from './components/Form';
 import Transaction from './components/Transaction';
+import { Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import TransactionTable from './components/TransactionTable';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Transaction />
+    <BrowserRouter>
+      <TransactionTable />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
