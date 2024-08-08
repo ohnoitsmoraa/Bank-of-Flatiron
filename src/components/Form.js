@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -27,13 +27,13 @@ function Form() {
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
 
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Transaction added successfully',
-        showConfirmButton: false,
-        timer: 1500
-      })
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Transaction added successfully",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   };
   console.log(formData);
   return (
@@ -75,8 +75,12 @@ function Form() {
           value={formData.amount}
           onChange={handleOnChange}
         />
-        <button className="add" type="submit">Add Transaction</button>
-        <button className = "delete" type="reset">Delete</button>
+        <button className="add" type="submit">
+          Add Transaction
+        </button>
+        <button className="delete" type="reset">
+          Delete
+        </button>
       </form>
     </div>
   );
