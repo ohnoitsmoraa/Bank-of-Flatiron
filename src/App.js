@@ -10,13 +10,13 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://backend-tan-seven.vercel.app/transactions")
       .then((res) => res.json())
       .then((data) => setTransactions(data));
   }, []);
 
   const addTransaction = (newTransaction) => {
-    fetch("http://localhost:3000/transactions", {
+    fetch("https://backend-tan-seven.vercel.app/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <h1 className="character">Transaction List</h1>
       <Filter search={search} setSearch={setSearch} />
-      <TransactionTable transactions={filteredTransactions} />
+      <TransactionTable transactions={transactions} />
     </div>
   );
 }
