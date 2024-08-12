@@ -26,11 +26,11 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setTransactions([...transactions, data]);
-      })
+      });
   };
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.category.toLowerCase().includes(search.toLowerCase())
-  )
+  );
   return (
     <div className="App">
       <h1 className="character">Transaction List</h1>
